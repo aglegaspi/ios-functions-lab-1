@@ -97,7 +97,7 @@ lastDigit(12345)
 ```
 
 
-## Question 5
+## Question 5 √
 
 Write a function that takes in any two positive integers and return the sum.
 
@@ -114,7 +114,7 @@ addTwoPosNums(num1: -34, num2: -45)
 
 ```
 
-## Question 6
+## Question 6 √
 
 Write a function takes in any number grade and returns a corresponding letter grade.
 
@@ -126,6 +126,32 @@ Write a function takes in any number grade and returns a corresponding letter gr
 | 70 - 79 | C |
 | 65 - 69 | D |
 | Below 65 | F |
+
+```swift
+
+func gimmeMyGrade(grade: Int) -> String {
+    
+    switch grade {
+        case 100:
+            return "A+"
+        case 90...99:
+            return "A"
+        case 80...89:
+            return "B"
+        case 70...79:
+            return "C"
+        case 65...69:
+            return "D"
+        
+        default:
+            return "F"
+    }
+    
+}
+
+gimmeMyGrade(grade: 100)
+
+```
 
 
 ## Question 7
