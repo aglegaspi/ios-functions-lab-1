@@ -74,7 +74,7 @@ min2(a: 1, b: 2)
 ```
 
 
-## Question 4
+## Question 4 √
 
 Write a function that takes an `Int` and returns its last digit. Name the function `lastDigit`. Use _ to ignore the external parameter name.
 
@@ -86,11 +86,33 @@ Input: `lastDigit(12345)`
 
 Output: `5`
 
+```swift
+
+func lastDigit(_ number: Int) -> Any {
+    let (_,r) = number.quotientAndRemainder(dividingBy: 10)
+    return r
+}
+lastDigit(12345)
+
+```
+
 
 ## Question 5
 
 Write a function that takes in any two positive integers and return the sum.
 
+```swift 
+
+func addTwoPosNums(num1: Int, num2: Int) -> Int {
+    
+    let result = abs(num1) + abs(num2)
+    
+    return result
+}
+
+addTwoPosNums(num1: -34, num2: -45)
+
+```
 
 ## Question 6
 
