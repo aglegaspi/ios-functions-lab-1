@@ -184,27 +184,31 @@ calculator(num1: 6, num2: 3, operator1: "+")
 ```
 
 
-## Question 8
+## Question 8 √
 
 Write a function so that it will print out **total cost after tip.**
 
 ```swift
-let mealCost = 45
-let tipPercentage = 0.15
 
-//Write your code below
+let mealCost: Double = 45
+let tipPercentage: Double = 0.15
 
+func totalWithTip() -> Double {
+    return mealCost + (mealCost * tipPercentage)
+}
 let myFinalCost = totalWithTip() //Fill in the arguments
-```
 
-Write a function that will print out **total cost after tip and tax.**
 
-```swift
+//Write a function that will print out **total cost after tip and tax.**
+
 let taxPercentage = 0.09
 
-//Write your code below
+func totalWithTipAndTax(mealCost: Double, tipPercentage: Double) -> Double {
+    return (mealCost * tipPercentage) + (mealCost * taxPercentage) + mealCost
+}
 
-let myFinalCostWithTipAndTax = totalWithTipAndTax() //Fill in the arguments in function
+let myFinalCostWithTipAndTax = totalWithTipAndTax(mealCost: 36.00, tipPercentage: 0.20)
+
 ```
 
 
