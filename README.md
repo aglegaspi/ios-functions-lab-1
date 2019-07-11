@@ -154,11 +154,34 @@ gimmeMyGrade(grade: 100)
 ```
 
 
-## Question 7
+## Question 7 √
 
 Make a calculator function that takes in three parameters (two numbers and one operator) and returns the answer of the operation.
 
 Operator parameter: (+, -, x, /)
+
+```swift 
+
+func calculator(num1: Int, num2: Int, operator1: String) -> Any {
+    
+    switch operator1 {
+        case "+":
+            return num1 + num2
+        case "-":
+            return num1 - num2
+        case "*":
+            return num1 * num2
+        case "/":
+            return num1 / num2
+        
+        default:
+            return "Operators must be +, -, x, /"
+    }
+}
+
+calculator(num1: 6, num2: 3, operator1: "+")
+
+```
 
 
 ## Question 8
