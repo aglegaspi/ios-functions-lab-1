@@ -3,7 +3,7 @@
 Fork and clone this repo. On your fork, answer and commit the follow questions. When you are finished, submit the link to your repo on Canvas.
 
 
-## Question 1
+## Question 1 √
 
 Complete the function so that it will print out total cost after tax. Make sure to **call the function** afterwards.
 
@@ -12,8 +12,10 @@ let itemCost = 45.0
 let nyTax = 0.08775
 
 func totalWithTax() {
-
+    print(itemCost + (itemCost * nyTax))
 }
+
+totalWithTax()
 ```
 
 Then, modify the function you implemented to have a return type of `Int`, and use an external name that looks more readable. Function calls should look something like "total cost of the item after tax"
