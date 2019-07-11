@@ -20,24 +20,34 @@ totalWithTax()
 
 Then, modify the function you implemented to have a return type of `Int`, and use an external name that looks more readable. Function calls should look something like "total cost of the item after tax"
 
-## Question 2
+## Question 2 √
 
 Convert the the following if/else statement below into function with a `String` return type.
 
 ```swift
 let todaysTemperature = 72
 
-if todaysTemperature <= 40 {
-    print("It's cold out.")
-} else if todaysTemperature >= 85 {
-    print("It's really warm.")
-} else {
-    print("Weather is moderate.")
+func howsTheWeather(temp: Int) -> String {
+
+    if todaysTemperature <= 40 {
+        return "It's cold out."
+        
+    } else if todaysTemperature >= 85 {
+        return "It's really warm."
+        
+    } else {
+        return "Weather is moderate."
+    }
+
 }
+
+let tempResult = howsTheWeather(temp: todaysTemperature)
+print(tempResult)
+
 ```
 
 
-## Question 3
+## Question 3 √
 
 Write a function named `min2` that takes two `Int` values, `a` and `b`, and returns the smallest one.
 
@@ -48,6 +58,20 @@ Example:
 Input: `min2(a:1, b:2)`
 
 Output: `1`
+
+```swift
+
+func min2(a: Int, b: Int) -> Int {
+    
+    if a > b {
+        return b
+    } else {
+        return a
+    }
+}
+
+min2(a: 1, b: 2)
+```
 
 
 ## Question 4
