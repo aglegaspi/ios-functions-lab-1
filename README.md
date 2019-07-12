@@ -293,7 +293,7 @@ print(printAnswer)
 ```
 
 
-## Question 12
+## Question 12 √
 
 Write a function named `reverse` that takes an array of integers named `numbers` as a parameter. The function should return an array with the numbers from `numbers` in reverse order.
 
@@ -303,6 +303,15 @@ Input: `reverse([1, 2, 3])`
 
 Output: `[3, 2, 1]`
 
+```swift
+func reverse(_ arrOfNums: [Int]) -> [Int] {
+
+let converted: [Int] = arrOfNums.reversed()
+return converted
+
+}
+print(reverse([1, 2, 3]))
+```
 
 ## Question 13
 
@@ -333,18 +342,41 @@ Input: `["Person 1": 83, "Person 2": 74, "Person 3": 82]`
 
 Output: `"Person 3"`
 
-## Question 17
+## Question 17 √
 
 Write a function that determines if a value is inside of array.
 
+```swift 
+func helloValueAreYouThere(enterNumber number: Int) -> Bool {
+    let array = [1, 3, 5, 6, 7]
+    return array.contains(number)
+}
+helloValueAreYouThere(enterNumber: 3)
+```
 
-## Question 18
+
+## Question 18 √
 
 Write a function takes an `Int` as input, and returns true if it is even, or false if it is odd.
 Using your new function, write code that prints out whether `dieRoll` is even or odd:
 
 `let dieRoll = Int(arc4random_uniform(6) + 1)`
 
+```swift 
+let dieRoll = Int(arc4random_uniform(6) + 1)
+
+func letsPlayDice(_ number: Int) -> Bool {
+    
+    if number % 2 == 0 {
+        return true
+    } else {
+        return false
+    }
+
+}
+
+letsPlayDice(dieRoll)
+```
 
 ## Question 19
 
