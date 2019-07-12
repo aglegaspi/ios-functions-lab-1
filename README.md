@@ -429,7 +429,7 @@ print(numOfChar(myString))
 ```
 
 
-## Question 21
+## Question 21 √
 
 Write a function that counts how many characters in a String match a specific character.  (e.g: count how many "a"s are in a String, or count how many ","s are in a String.
 
@@ -438,6 +438,20 @@ Input:
 ```swift
 let testString = "This is a test string for your code"
 let targetCharacter: Character = "i"
+
+func countSpecificChar(_ string: String, _: Character) -> Int {
+    let output = string.lowercased()
+    var counter = 0
+    
+    for i in output {
+        if i == targetCharacter {
+            counter += 1
+        }
+    }
+    return counter
+}
+print(countSpecificChar(testString,targetCharacter))
+
 ```
 
 Sample output: `3`
