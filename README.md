@@ -212,7 +212,7 @@ let myFinalCostWithTipAndTax = totalWithTipAndTax(mealCost: 36.00, tipPercentage
 ```
 
 
-## Question 9
+## Question 9 √
 
 Implement a function named `repeatPrint` that takes a string `message` and a integer `count` as parameters. The function should print `message` `count` number of times and then print a newline.
 
@@ -220,6 +220,18 @@ Example:
 Input: `repeatPrint(message: "+", count: 10)`
 
 Output: `++++++++++`
+
+```swift
+func repeatPrint(message: String, count: Int) -> String {
+var result = ""
+for _ in 1...count {
+result += message
+}
+return result
+}
+let result = repeatPrint(message: "+", count: 10)
+print(result)
+```
 
 
 ## Question 10
@@ -243,6 +255,12 @@ If the number if a multiple of 3, print `"Fizz"` instead of the number
 If the number is a multiple of 5, print `"Buzz"` instead of the number
 If the number is a multiple of 3 AND 5, print `"FizzBuzz"` instead of the number
 Your function should take in one parameter: x (the number to count up to)
+
+```swift
+func fizzBuzz() {
+
+}
+```
 
 
 ## Question 12
