@@ -409,13 +409,24 @@ print(largestInt(myArray))
 ```
 
 
-## Question 20
+## Question 20 √
 
 Write a function that takes a String as input and returns the number of characters in the string
 
 Using your function, print how many characters are in myString:
 
 `let myString = "Swift is a new programming language for iOS, OS X, watchOS, and tvOS apps that builds on the best of C and Objective-C, without the constraints of C compatibility."`
+
+```swift 
+let myString = "Swift is a new programming language for iOS, OS X, watchOS, and tvOS apps that builds on the best of C and Objective-C, without the constraints of C compatibility."
+
+func numOfChar(_ string: String) -> String {
+    
+    let charCount = string.count
+    return "Character Count: \(charCount)"
+}
+print(numOfChar(myString))
+```
 
 
 ## Question 21
