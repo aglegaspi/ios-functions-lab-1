@@ -457,7 +457,7 @@ print(countSpecificChar(testString,targetCharacter))
 Sample output: `3`
 
 
-## Question 22
+## Question 22 😐
 
 Write a function that counts how many characters in a String match one of several possible characters.  (e.g: count how many vowels are in a String, or count how many "a"s "b"s and "c"s are in a Sting)
 
@@ -471,9 +471,9 @@ let targetCharacters: [Character] = ["a","e","i","o","u"]
 Output: `13`
 
 
-## Question 23
+## Question 23 👺
 
-Write a function that returns the number of unique Ints in an array of Ints.
+Write a function that returns the number(count) of unique Ints in an array of Ints.
 
 Example:
 Input: `let inputArray2 = [3,1,4,1,3,2,6,1,9]`
@@ -482,8 +482,27 @@ Output: `4`
 
 //Explanation: 2, 4, 6, 9 are unique in the array. Every other number is not unique.
 
+```swift 
 
-## Question 24
+// still trying to solve this problem
+
+let inputArray2 = [3,1,4,1,3,2,6,1,9]
+
+func uniqueInts() -> Int {
+    
+    let arrToSet = Set(inputArray2)
+    let uniqueCount =  Set(inputArray2).intersection(arrToSet)
+    print(uniqueCount)
+    
+    return 1
+    
+}
+uniqueInts()
+
+```
+
+
+## Question 24 √
 
 Write a function that converts a binary number into decimal. The binary number will be given as an array of Ints.
 
@@ -491,6 +510,25 @@ Example:
 Input: `let binaryArray = [1,0,1,1,1,0,1]`
 
 Output: `93`
+
+```swift
+let binaryArray = [1,0,1,1,1,0,1]
+
+func binaryToDecimal(_ binaryArray: [Int]) -> Decimal {
+    var exponent = 0
+    var output: Decimal = 0.0
+    
+    for number in binaryArray {
+        output += Decimal(number) * pow(2,exponent)
+        exponent += 1
+    }
+    return output
+    
+}
+
+binaryToDecimal(binaryArray)
+```
+
 
 ## Question 25
 
@@ -501,6 +539,9 @@ Input: `timeDifference(firstHour: 12, firstMinute: 3, secondHour: 13, secondMinu
 
 Output: `67`
 
+```swift
+
+```
 
 ## Question 26
 
@@ -511,6 +552,9 @@ Input:  `filterOdd(arr: [1, 2, 3, 4, 5, 6, 7, 8])`
 
 Output: `[2, 4, 6, 8]`
 
+```swift
+
+```
 
 ## Question 27
 
@@ -529,6 +573,9 @@ Input:  `multiplyIt(arr: [1, 2, 3, 4], n: 4)`
 
 Output:  `[4, 8, 12, 16]`
 
+```swift
+
+```
 
 ## Question 28
 
@@ -539,6 +586,9 @@ Input:  `unwrap(arr: [nil, 7, 4, nil, 43, 11, nil, 2])`
 
 Output: `[7, 4, 43, 11, 2]`
 
+```swift
+
+```
 
 ## Question 29
 
@@ -549,6 +599,9 @@ Input:  `countBools(arr: [true, true, false, true, false, true])`
 
 Output: `[false: 2, true: 4]`
 
+```swift
+
+```
 
 ## Question 30
 
@@ -559,6 +612,9 @@ Input:  `countCharacters(str: "Hello, World!")`
 
 Output: `["H": 1, "r": 1, "!": 1, "e": 1, "o": 2, "l": 3, ",": 1, " ": 1, "W": 1, "d": 1]`
 
+```swift
+
+```
 
 ## Question 31
 
@@ -571,31 +627,50 @@ Input:  `dictToTuples(dict: baseballTeamsById)`
 
 Output: `[(.0 1003, .1 "Rays"), (.0 1001, .1 "Mets"), (.0 1004, .1 "Marlins"), (.0 1002, .1 "Yankees")]`
 
+```swift
+
+```
 
 ## Question 32
 
 Write a function that checks if a String is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome)
 
 
+```swift
+
+```
 ## Question 33
 
 Write a function that checks if a String is a [pangram](https://en.wikipedia.org/wiki/Pangram)
 
+```swift
+
+```
 
 ## Question 34
 
 Write your own `min()` and `max()` functions for an Array of Ints
 
+```swift
+
+
+
+```
 
 ## Question 35
 
 Given two arrays of Ints, write a function that tells you all the values they have in common.
 
 
+```swift
+
+```
 ## Question 36
 
 Find the most-frequently appearing Array of Ints in an Array of Arrays of Ints.
+```swift
 
+```
 
 ## Question 37
 
@@ -606,3 +681,7 @@ Sample input:
 
 Sample output:
 `Uijt jt b uftu tusjoh. Bozuijoh dbo cf xsjuufo jo ifsf (fwfo Afcsbt boe afcsbt).`
+
+```swift
+
+```
