@@ -234,7 +234,7 @@ print(result)
 ```
 
 
-## Question 10
+## Question 10 √
 
 Write a function named `first` that takes an Int named n and returns an array with the first n numbers starting from 1.
 
@@ -246,8 +246,22 @@ Input: `first(3)`
 
 Output: `[1, 2, 3]`
 
+```swift
+func first(_ n: Int) -> [Int] {
+var output = [Int]()
 
-## Question 11
+for i in 1...n {
+    output.append(i)
+}
+return output
+}
+
+let result = first(3)
+print(result)
+```
+
+
+## Question 11 √
 
 Write a function that prints the numbers from 1 to x, except:
 
@@ -257,9 +271,25 @@ If the number is a multiple of 3 AND 5, print `"FizzBuzz"` instead of the number
 Your function should take in one parameter: x (the number to count up to)
 
 ```swift
-func fizzBuzz() {
-
+func fizzBuzz(lastNumberForRange end: Int) -> String {
+    var output = ""
+    
+    for number in 1...end {
+        if number % 3 == 0 && number % 5 == 0 {
+            output += "Fizz Buzz "
+        } else if number % 5 == 0 {
+            output += "Buzz "
+        } else if number % 3 == 0 {
+            output += "Fizz "
+        } else {
+            output += "\(number) "
+        }
+    }
+    
+    return output
 }
+let printAnswer = fizzBuzz(lastNumberForRange: 33)
+print(printAnswer)
 ```
 
 
