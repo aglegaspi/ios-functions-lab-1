@@ -378,7 +378,7 @@ func letsPlayDice(_ number: Int) -> Bool {
 letsPlayDice(dieRoll)
 ```
 
-## Question 19
+## Question 19 √
 
 Write a function that takes `[Int]` as input. It should return the largest Int in the array.
 
@@ -387,6 +387,26 @@ Using your function from the first step, use String interpolation to print a sen
 `let myArray = [3,5,1,3,532,1,4,91,20,30,92,143]`
 
 If you haven't already done so, write a function that takes in an Int and returns whether that number is even or odd. Use that function to print a sentence that states whether the largest Int in `myArray` is even or odd.
+
+```swift
+let myArray = [3,5,1,3,532,1,4,91,20,30,92,143]
+
+func largestInt(_ arrayOfNums: [Int]) -> String {
+    let maxNum = arrayOfNums.max() ?? 0
+    
+    func evenOrOdd() -> String {
+        if maxNum % 2 == 0 {
+            return "The largest Int in 'myArray' is even"
+        } else {
+            return "The largest Int in 'myArray' is odd"
+        }
+    }
+    
+    let isItEvenOrOdd = evenOrOdd()
+    return "The largest Int in 'myArray' is \(maxNum). \(isItEvenOrOdd)"
+}
+print(largestInt(myArray))
+```
 
 
 ## Question 20
